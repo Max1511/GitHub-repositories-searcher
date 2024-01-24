@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Autocomplete</title>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">GitHub repositories searcher</h1>
+            <input class="input" type="text" autocomplete="off">
+            <div class="found-repositories">
+                <button class="found-repositories__add-button hidden"></button>
+                <button class="found-repositories__add-button hidden"></button>
+                <button class="found-repositories__add-button hidden"></button>
+                <button class="found-repositories__add-button hidden"></button>
+                <button class="found-repositories__add-button hidden"></button>
+            </div>
+            <div class="loading">
+                <img class="loading__image hidden" src="src/loading.gif" alt="loading" width="60">
+            </div>
+            <div class="saved-repositories">
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
