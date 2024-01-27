@@ -7,7 +7,7 @@ const foundRepositoriesButtons = document.querySelectorAll('.found-repositories_
 const savedRepositoriesDiv = document.querySelector('.saved-repositories');
 
 
-let repositoriesInfo = [];
+const repositoriesInfo = [];
 
 const debounce = (callback, debounceTime) => {
     let timeout;
@@ -29,7 +29,7 @@ const debounce = (callback, debounceTime) => {
 
 const debouncedResponse = debounce(() => {
     const queryString = 'q=' + encodeURIComponent(input.value);
-    let answer = fetch(`https://api.github.com/search/repositories?${queryString}`)
+    const answer = fetch(`https://api.github.com/search/repositories?${queryString}`)
         .then(response => response.json());
     
     answer
